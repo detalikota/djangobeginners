@@ -5,6 +5,10 @@
 <h1> Homepage </h1>
 <ul>
 {% for post in post_list %}
-    <li> {{ post }} </li>
+    <li> title - {{ post.title }} </li>
+    <li> body - {{ post.body }} </li>
+    <li> author - {{ post.author }} </li>
+    <p> </p>
 {% endfor %}
+</ul>
 {% endblock content %}
