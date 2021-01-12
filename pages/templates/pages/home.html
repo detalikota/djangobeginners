@@ -4,8 +4,8 @@
 {% block content %}
 <h1> Homepage </h1>
 <ul>
-{% for post in post_list %}
-    <li> title - {{ post.title }} </li>
+{% for post in post %}
+    <h2> <li> <a href="{% url 'post-detail' post.pk %}"> {{ post.title }} </a></li> </h2>
     <li> body - {{ post.body }} </li>
     <li> author - {{ post.author }} </li>
     <p> </p>
