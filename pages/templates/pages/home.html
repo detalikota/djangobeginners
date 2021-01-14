@@ -9,6 +9,15 @@
     <li> body - {{ post.body }} </li>
     <li> author - {{ post.author }} </li>
     <p> </p>
+    <div class="card-footer">
+        {% for comment in post.comments.all %}
+        <p>
+        <span class="font-weight-bold"> {{ comment.author }} &middot;</span>
+        {{ comment }}
+        </p>
+        {% endfor %}
+    </div>
 {% endfor %}
 </ul>
+
 {% endblock content %}
