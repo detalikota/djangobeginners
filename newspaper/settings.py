@@ -35,7 +35,6 @@ INSTALLED_APPS = [
     #local
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
-    'articles.apps.ArticlesConfig',
     #3rd party
     'crispy_forms',
     #builtin
